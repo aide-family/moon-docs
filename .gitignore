@@ -1,6 +1,5 @@
+
 node_modules/
-.idea/
-.env
-.cache/
-.temp/
-dist/
+src/.vuepress/.cache/
+src/.vuepress/.temp/
+src/.vuepress/dist/
