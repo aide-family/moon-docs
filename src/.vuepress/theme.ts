@@ -1,65 +1,70 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { hopeTheme } from 'vuepress-theme-hope'
+import { enNavbar, zhNavbar } from './navbar/index.js'
+import { enSidebar, zhSidebar } from './sidebar/index.js'
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: 'https://aide-family.github.io',
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: '梧桐',
+    url: 'https://github.com/aide-cloud',
+    email: 'aidecloud@163.com',
   },
 
-  iconAssets: "fontawesome-with-brands",
+  license: 'MIT',
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  favicon: '/logo.svg',
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  iconAssets: 'fontawesome-with-brands',
 
-  docsDir: "src",
+  logo: '/logo.svg',
+
+  repo: 'https://github.com/aide-family/aide-family.github.io',
+
+  docsDir: 'src',
 
   locales: {
-    "/": {
+    '/': {
       // navbar
       navbar: enNavbar,
 
       // sidebar
       sidebar: enSidebar,
 
-      footer: "Default footer",
+      footer: 'Default footer',
 
       displayFooter: true,
 
       metaLocales: {
-        editLink: "Edit this page on GitHub",
+        editLink: 'Edit this page on GitHub',
       },
     },
 
     /**
      * Chinese locale config
      */
-    "/zh/": {
+    '/zh/': {
       // navbar
       navbar: zhNavbar,
 
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "默认页脚",
+      footer: '默认页脚',
 
       displayFooter: true,
 
       // page meta
       metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
+        editLink: '在 GitHub 上编辑此页',
       },
     },
   },
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
+      '/demo/encrypt.html': ['1234'],
+      '/zh/demo/encrypt.html': ['1234'],
     },
   },
 
@@ -67,15 +72,15 @@ export default hopeTheme({
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
     comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      provider: 'Giscus',
+      repo: 'vuepress-theme-hope/giscus-discussions',
+      repoId: 'R_kgDOG_Pt2A',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOG_Pt2M4COD69',
     },
 
     components: {
-      components: ["Badge", "VPCard"],
+      components: ['Badge', 'VPCard'],
     },
 
     // All features are enabled for demo, only preserve features you need here
@@ -92,14 +97,14 @@ export default hopeTheme({
       mark: true,
       stylize: [
         {
-          matcher: "Recommended",
+          matcher: 'Recommended',
           replacer: ({ tag }) => {
-            if (tag === "em")
+            if (tag === 'em')
               return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
+                tag: 'Badge',
+                attrs: { type: 'tip' },
+                content: 'Recommended',
+              }
           },
         },
       ],
@@ -205,4 +210,4 @@ export default hopeTheme({
     //   },
     // },
   },
-});
+})
