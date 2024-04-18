@@ -19,7 +19,7 @@ export default hopeTheme({
 
   logo: '/logo.svg',
 
-  repo: 'https://github.com/aide-family/aide-family.github.io',
+  repo: 'https://github.com/aide-family/moon',
 
   docsDir: 'src',
 

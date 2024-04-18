@@ -2,33 +2,35 @@
 home: true
 icon: home
 title: Project home
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
-bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
+heroImage: /logo.svg
+# bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
+# bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
-heroText: Project name
-tagline: You can place the description of the project here.
+heroText: Moon monitoring system
+tagline: Moon is a monitoring management tool integrated with the prometheus family, designed to simplify the operation and maintenance of the Prometheus monitoring system. The tool provides a one-stop solution to centrally manage and configure multiple Prometheus instances and their associated service discovery, rule sets, and alert notifications.
 actions:
-  - text: How to Use
+  - text: Quick start
     icon: lightbulb
     link: ./demo/
     type: primary
 
-  - text: Docs
-    link: ./guide/
+  - text: Sample address
+    link: https://prometheus.aide-cloud.cn
 
 highlights:
   - header: Easy to install
     image: /assets/image/box.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    # bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
+    # bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     highlights:
-      - title: Run <code>pnpm create vuepress-theme-hope hope-project</code> to create a new project with this theme.
-      - title: Run <code>pnpm create vuepress-theme-hope add .</code> in your project root to create a new project with this theme.
+      - title: Run <code>docker pull aidemoonio/moon-server:latest</code> pull moon-server image.
+      - title: Run <code>docker pull aidemoonio/moon-agent:latest</code> pull moon-agent image.
+      - title: run <code>docker run -d --name moon-server -p 8001:8000 -p 8888:8888 -p 8000:80 -v ./moon/server/db:/app/db -v ./moon/server/cache:/app/cache -v ./moon/server/log:/app/log aidemoonio/moon-server:latest </code> start moon-server.
+      - title: Run <code>docker run -d --name moon-agent -p 8002:8000 -v ./moon/agent/cache:/app/cache -v ./moon/agent/log:/app/log aidemoonio/moon-agent:latest </code> start moon-agent.
 
-  - header: Add things you want in markdown
-    description: We extended the standard commonMark specification and added tons of new features for you.
+  - header: Things you might want to know about Moon
+    description: Starting with Prometheus and ending with Prometheus, the Moon Monitoring System provides you with an all-in-one monitoring management tool.
     image: /assets/image/markdown.svg
     bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg

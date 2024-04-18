@@ -2,33 +2,37 @@
 home: true
 icon: home
 title: 项目主页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
-bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
+heroImage: /logo.svg
+# bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
+# bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
-heroText: 项目名称
-tagline: 你可以在这里放置或是整个项目的描述。
+heroText: Moon 监控系统
+tagline: Moon 是一款集成prometheus系列的监控管理工具，专为简化Prometheus监控系统的运维工作而设计。该工具提供了一站式的解决方案，能够集中管理和配置多个Prometheus实例及其相关的服务发现、规则集和警报通知。
+
 actions:
-  - text: 使用指南
+  - text: 快速开始
     icon: lightbulb
     link: ./demo/
     type: primary
 
-  - text: 文档
-    link: ./guide/
+  - text: 示例地址
+    link: https://prometheus.aide-cloud.cn
+    
 
 highlights:
   - header: 易于安装
     image: /assets/image/box.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    # bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
+    # bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     highlights:
-      - title: 运行 <code>pnpm create vuepress-theme-hope hope-project</code> 以创建一个新的主题项目。
-      - title: 在已有项目根目录下运行 <code>pnpm create vuepress-theme-hope add .</code> 以在项目中添加主题。
+      - title: 运行 <code>docker pull aidemoonio/moon-server:latest</code> 拉取 moon-server 镜像。
+      - title: 运行 <code>docker pull aidemoonio/moon-agent:latest</code> 拉取 moon-agent 镜像。
+      - title: 运行 <code>docker run -d --name moon-server -p 8001:8000 -p 8888:8888 -p 8000:80 -v ./moon/server/db:/app/db -v ./moon/server/cache:/app/cache -v ./moon/server/log:/app/log aidemoonio/moon-server:latest </code> 启动 moon-server。
+      - title: 运行 <code>docker run -d --name moon-agent -p 8002:8000 -v ./moon/agent/cache:/app/cache -v ./moon/agent/log:/app/log aidemoonio/moon-agent:latest </code> 启动 moon-agent。
 
-  - header: 在 Markdown 中添加你想要的内容
-    description: 我们扩展了标准的 CommonMark 规范，为你添加了成吨功能。
+  - header: 在 Moon 中你可能想要了解的内容
+    description: 始于Prometheus，不止于Prometheus，Moon 监控系统， 为你提供一个一体化的监控管理工具。
     image: /assets/image/markdown.svg
     bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
