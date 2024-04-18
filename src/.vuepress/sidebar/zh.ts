@@ -4,7 +4,7 @@ export const zhSidebar = sidebar({
   '/i18n/zh/': [
     'quick-start/',
     {
-      text: '功能说明',
+      text: '系统说明',
       icon: 'rongqi',
       prefix: 'feature/',
       // link: 'feature/',
@@ -28,7 +28,26 @@ export const zhSidebar = sidebar({
       icon: 'hot',
       prefix: 'server/',
       // link: 'demo/',
-      children: ['', 'agent/', 'kubemoon/'],
+      children: [
+        {
+          collapsible: true,
+          children: 'structure',
+          text: 'Server',
+          prefix: 'server/',
+        },
+        {
+          collapsible: true,
+          children: 'structure',
+          text: 'Agent',
+          prefix: 'agent/',
+        },
+        {
+          collapsible: true,
+          children: 'structure',
+          text: 'Kubemoon',
+          prefix: 'kubemoon/',
+        },
+      ],
     },
   ],
 })

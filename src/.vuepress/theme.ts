@@ -26,6 +26,11 @@ export default hopeTheme({
 
   docsDir: 'src',
 
+  breadcrumb: true,
+  prevLink: true,
+  nextLink: true,
+  headerDepth: 3,
+
   locales: {
     '/i18n/en/': {
       // navbar
@@ -34,12 +39,12 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: 'Default footer',
+      // footer: 'Default footer',
 
       displayFooter: true,
 
       metaLocales: {
-        editLink: 'Edit this page on GitHub',
+        // editLink: 'Edit this page on GitHub',
       },
     },
 
@@ -53,13 +58,13 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: '默认页脚',
+      // footer: '默认页脚',
 
       displayFooter: true,
 
       // page meta
       metaLocales: {
-        editLink: '在 GitHub 上编辑此页',
+        // editLink: '在 GitHub 上编辑此页',
       },
     },
   },
