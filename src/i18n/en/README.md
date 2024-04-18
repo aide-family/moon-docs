@@ -12,7 +12,7 @@ tagline: Moon is a monitoring management tool integrated with the prometheus fam
 actions:
   - text: Quick start
     icon: lightbulb
-    link: ./demo/
+    link: ./quick-start/
     type: primary
 
   - text: Sample address
@@ -31,7 +31,7 @@ highlights:
 
   - header: Things you might want to know about Moon
     description: Starting with Prometheus and ending with Prometheus, the Moon Monitoring System provides you with an all-in-one monitoring management tool.
-    image: /assets/image/markdown.svg
+    # image: /assets/image/markdown.svg
     bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
     bgImageStyle:

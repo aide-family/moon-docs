@@ -2,6 +2,7 @@ import { sidebar } from 'vuepress-theme-hope'
 
 export const zhSidebar = sidebar({
   '/i18n/zh/': [
+    'quick-start/',
     {
       text: '功能与演示',
       icon: 'laptop-code',

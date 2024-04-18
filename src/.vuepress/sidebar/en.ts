@@ -2,6 +2,7 @@ import { sidebar } from 'vuepress-theme-hope'
 
 export const enSidebar = sidebar({
   '/i18n/en/': [
+    'quick-start/',
     {
       text: 'Demo',
       icon: 'laptop-code',

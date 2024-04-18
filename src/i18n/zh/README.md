@@ -13,7 +13,7 @@ tagline: Moon 是一款集成prometheus系列的监控管理工具，专为简�
 actions:
   - text: 快速开始
     icon: lightbulb
-    link: ./demo/
+    link: ./quick-start/
     type: primary
 
   - text: 示例地址
