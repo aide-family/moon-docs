@@ -1,5 +1,5 @@
 ---
-title: Baz
+title: Meet the Moon
 icon: circle-info
 ---
 

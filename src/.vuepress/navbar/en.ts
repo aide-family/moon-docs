@@ -1,30 +1,30 @@
-import { navbar } from "vuepress-theme-hope";
+import { navbar } from 'vuepress-theme-hope'
 
 export const enNavbar = navbar([
-  "/",
-  "/demo/",
+  '/',
+  '/demo/',
   {
-    text: "Guide",
-    icon: "lightbulb",
-    prefix: "/guide/",
+    text: 'Guide',
+    icon: 'lightbulb',
+    prefix: '/guide/',
     children: [
       {
-        text: "Bar",
-        icon: "lightbulb",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "#" }],
+        text: 'I am the user',
+        icon: 'lightbulb',
+        prefix: 'bar/',
+        children: ['baz'],
       },
       {
-        text: "Foo",
-        icon: "lightbulb",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "#" }],
+        text: 'I am a developer',
+        icon: 'lightbulb',
+        prefix: 'foo/',
+        children: ['ray'],
       },
     ],
   },
-  {
-    text: "V2 Docs",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/",
-  },
-]);
+  // {
+  //   text: 'V2 Docs',
+  //   icon: 'book',
+  //   link: 'https://theme-hope.vuejs.press/',
+  // },
+])
