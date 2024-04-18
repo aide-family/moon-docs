@@ -2,14 +2,14 @@
 title: 快速开始
 description: 快速开始
 lang: zh-CN
-icon: lightbulb
+icon: launch
 ---
 
-## 写在前面
-
+::: tip
 服务初始化默认用户名和密码如下，后续可通过修改密码功能修改
 
 用户名: `admin`  密码:  `123456`
+:::
 
 ## docker 部署
 

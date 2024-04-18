@@ -15,7 +15,10 @@ export default hopeTheme({
 
   favicon: '/logo.svg',
 
-  iconAssets: 'fontawesome-with-brands',
+  print: true,
+
+  iconAssets: '//at.alicdn.com/t/c/font_3803922_8dpc5b7xnts.css',
+  // iconPrefix: 'icon-',
 
   logo: '/logo.svg',
 
@@ -87,6 +90,7 @@ export default hopeTheme({
 
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {
+      hint: true,
       align: true,
       attrs: true,
       codetabs: true,

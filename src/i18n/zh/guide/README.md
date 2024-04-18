@@ -1,16 +1,16 @@
 ---
-title: 指南
-icon: lightbulb
+title: 使用指南
+icon: zhinan
 ---
 
 ## 功能亮点
 
-### Bar
+### 使用者看这里
 
-- [baz](bar/baz.md)
+- [使用者](./user/)
 - ...
 
-### Foo
+### 开发者看这里
 
-- [ray](foo/ray.md)
+- [开发者](./developer/)
 - ...

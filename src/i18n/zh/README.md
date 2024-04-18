@@ -1,6 +1,6 @@
 ---
 home: true
-icon: home
+icon: shouye
 title: 项目主页
 heroImage: /logo.svg
 # bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
@@ -12,7 +12,7 @@ tagline: Moon 是一款集成prometheus系列的监控管理工具，专为简�
 
 actions:
   - text: 快速开始
-    icon: lightbulb
+    icon: launch
     link: ./quick-start/
     type: primary
 
