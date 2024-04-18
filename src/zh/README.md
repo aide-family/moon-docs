@@ -23,8 +23,8 @@ actions:
 highlights:
   - header: 易于安装
     image: /assets/image/box.svg
-    # bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
-    # bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
+    bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
+    bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg
     highlights:
       - title: 运行 <code>docker pull aidemoonio/moon-server:latest</code> 拉取 moon-server 镜像。
       - title: 运行 <code>docker pull aidemoonio/moon-agent:latest</code> 拉取 moon-agent 镜像。
@@ -99,17 +99,16 @@ highlights:
         icon: circle-info
         details: 系统将具备多租户功能，支持多租户管理，每个租户可以独立管理数据
         link: https://theme-hope.vuejs.press/zh/guide/feature/page-info.html
-
-      - title: kubernetes 多集群管理
-        icon: lock
-        details: 支持 kubernetes 多集群管理， 轻松管理集群
-        link: https://theme-hope.vuejs.press/zh/guide/feature/encrypt.html
-
       - title: 支持更多数据源
         icon: copy
         details: 例如 loki、elasticsearch 等
         link: https://theme-hope.vuejs.press/zh/guide/feature/copy-code.html
 
+      - title: kubernetes 多集群管理
+        icon: lock
+        details: 支持 kubernetes 多集群管理， 轻松管理集群
+        link: https://theme-hope.vuejs.press/zh/guide/feature/encrypt.html
+      
       - title: kubernetes 集群监控
         icon: image
         details: 像管理普通的集群一样，管理 kubernetes 集群
