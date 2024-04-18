@@ -41,52 +41,52 @@ highlights:
       background-size: initial
     features:
       - title: 监控大盘
-        icon: clipboard-check
+        icon: a-321_sms-agent-center
         details: 配置 grafana 链接, 生成自定义大盘
         link: https://theme-hope.vuejs.press/zh/guide/markdown/others.html#link-check
 
       - title: 系统管理
-        icon: box-archive
+        icon: xitongguanli
         details: 提供完整的系统管理，使用 RBAC 权限控制
         link: https://theme-hope.vuejs.press/zh/guide/markdown/hint.html
 
       - title: 实时告警
-        icon: bell
+        icon: alert-fill
         details: 这里会展示各个领域下实时产生的告警
         link: https://theme-hope.vuejs.press/zh/guide/markdown/alert.html
 
       - title: 告警历史
-        icon: table-columns
+        icon: gaojinglishi
         details: 展示告警历史，查询告警完整生命周期，回溯告警前因后果
         link: https://theme-hope.vuejs.press/zh/guide/markdown/tabs.html
 
       - title: 策略组（规则组）
-        icon: code
+        icon: celvezu
         details: 使用统一的规则管理方式， 轻松管理监控策略
         link: https://theme-hope.vuejs.press/zh/guide/markdown/code-tabs.html
 
       - title: 告警策略（规则）
-        icon: align-center
+        icon: celve
         details: 配置告警规则，支持prom QL 表达式智能提示，语法校验
         link: https://theme-hope.vuejs.press/zh/guide/markdown/align.html
 
       - title: 数据源
-        icon: code
+        icon: peizhishujuyuan1
         details: 系统支持多数据源告警，例如prometheus、victoriametrics等
         link: https://theme-hope.vuejs.press/zh/guide/markdown/attrs.html
 
       - title: 告警组
-        icon: superscript
+        icon: gaojingzuguanli
         details: 你的通知对象统一管理功能
         link: https://theme-hope.vuejs.press/zh/guide/markdown/sup-sub.html
 
       - title: 机器人（hook）
-        icon: quote-left
+        icon: web
         details: 支持多种类型机器人，例如企业微信、钉钉、飞书、微信、自定义hook等
         link: https://theme-hope.vuejs.press/zh/guide/markdown/footnote.html
 
       - title: 更多
-        icon: ellipsis
+        icon: gengduo1
         details: 权限控制，用户管理，全局字典等
         link: https://theme-hope.vuejs.press/zh/guide/interface/others.html
 
@@ -96,21 +96,22 @@ highlights:
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/1-dark.svg
     features:
       - title: 多租户
-        icon: circle-info
+        icon: duozuhu
         details: 系统将具备多租户功能，支持多租户管理，每个租户可以独立管理数据
         link: https://theme-hope.vuejs.press/zh/guide/feature/page-info.html
+      
       - title: 支持更多数据源
-        icon: copy
+        icon: peizhishujuyuan
         details: 例如 loki、elasticsearch 等
         link: https://theme-hope.vuejs.press/zh/guide/feature/copy-code.html
 
       - title: kubernetes 多集群管理
-        icon: lock
+        icon: kubernetes1
         details: 支持 kubernetes 多集群管理， 轻松管理集群
         link: https://theme-hope.vuejs.press/zh/guide/feature/encrypt.html
       
       - title: kubernetes 集群监控
-        icon: image
+        icon: kubernetes-copy
         details: 像管理普通的集群一样，管理 kubernetes 集群
         link: https://theme-hope.vuejs.press/zh/guide/feature/photo-swipe.html
 
