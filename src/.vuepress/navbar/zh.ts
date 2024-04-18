@@ -1,8 +1,7 @@
 import { navbar } from 'vuepress-theme-hope'
 
 export const zhNavbar = navbar([
-  '/zh/',
-  '/zh/demo/',
-  '/zh/guide/user/',
-  '/zh/guide/developer/',
+  '/i18n/zh/',
+  '/i18n/zh/demo/',
+  '/i18n/zh/guide/',
 ])

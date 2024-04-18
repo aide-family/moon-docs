@@ -24,7 +24,7 @@ export default hopeTheme({
   docsDir: 'src',
 
   locales: {
-    '/': {
+    '/i18n/en/': {
       // navbar
       navbar: enNavbar,
 
@@ -43,7 +43,7 @@ export default hopeTheme({
     /**
      * Chinese locale config
      */
-    '/zh/': {
+    '/i18n/zh/': {
       // navbar
       navbar: zhNavbar,
 
@@ -63,8 +63,8 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      '/demo/encrypt.html': ['1234'],
-      '/zh/demo/encrypt.html': ['1234'],
+      '/i18n/en/demo/encrypt.html': ['1234'],
+      '/i18n/zh/demo/encrypt.html': ['1234'],
     },
   },
 
