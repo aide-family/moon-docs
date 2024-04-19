@@ -13,6 +13,8 @@ icon: feature
 
 Moon包含如下子服务：
 
-- [Moon-Server](../server/server/): `Moon-Server`是Moon的监控数据存储和计算组件，负责接收监控数据，并计算出监控指标。
-- [Moon-Agent](../server/agent/): `Moon-Agent`是`Moon`的监控采集组件，负责收集监控数据，并上报到`Moon-Server`。
-- [Kubemoon(开发中)](../server/kubemoon/): `Kubemoon`是`Moon`的`Kubernetes`统一管理组件，负责管理`Kubernetes`集群。
+- [Moon-Server](../server/server/): 是`Moon`的监控管理组件，负责接收监控告警数据，维护监控规则，和`web`端交互等。
+- [Moon-Agent](../server/agent/): 是`Moon`的监控告警判断组件，负责判断规则是否告警，并上报到`Moon-Server`。
+- [Kubemoon(开发中)](../server/kubemoon/): `Kubemoon`是`Moon`的`Kubernetes`统一管理组件，负责管理`Kubernetes`集群， 衔接`Moon`和`Kubernetes`， 完成统一监控告警规则， 统一监控告警数据， 统一监控告警通知。
+
+<Catalog />
