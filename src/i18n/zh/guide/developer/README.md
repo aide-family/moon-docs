@@ -1,13 +1,5 @@
 ---
 title: 开发者
 icon: copy
+index: false
 ---
-
-## Introduction
-
-We support bar feature, ...
-
-## Details
-
-- [baz](baz.md)
-- ...

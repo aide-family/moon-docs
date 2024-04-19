@@ -21,7 +21,7 @@ export const zhSidebar = sidebar({
       text: '使用指南',
       icon: 'zhinan',
       prefix: 'guide/',
-      children: ['user/', 'developer/'],
+      children: 'structure',
     },
     {
       text: '子服务',

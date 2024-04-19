@@ -134,7 +134,7 @@ export default hopeTheme({
       // echarts: true,
 
       // Install flowchart.ts before enabling it
-      // flowchart: true,
+      flowchart: true,
 
       // gfm requires mathjax-full to provide tex support
       // gfm: true,
@@ -146,7 +146,7 @@ export default hopeTheme({
       // mathjax: true,
 
       // Install mermaid before enabling it
-      // mermaid: true,
+      mermaid: true,
 
       // playground: {
       //   presets: ["ts", "vue"],

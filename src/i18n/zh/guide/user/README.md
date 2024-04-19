@@ -1,15 +1,5 @@
 ---
 title: 使用者
 icon: lightbulb
+index: false
 ---
-
-## Introduction
-
-We support bar feature, ...
-
-## Details
-
-- [监控大盘](dashboard.md)
-- [系统管理](system.md)
-- [监控管理](monitor.md)
-- ...
