@@ -23,31 +23,5 @@ export const zhSidebar = sidebar({
       prefix: 'guide/',
       children: 'structure',
     },
-    {
-      text: '子服务',
-      icon: 'hot',
-      prefix: 'server/',
-      // link: 'demo/',
-      children: [
-        {
-          collapsible: true,
-          children: 'structure',
-          text: 'Server',
-          prefix: 'server/',
-        },
-        {
-          collapsible: true,
-          children: 'structure',
-          text: 'Agent',
-          prefix: 'agent/',
-        },
-        {
-          collapsible: true,
-          children: 'structure',
-          text: 'Kubemoon',
-          prefix: 'kubemoon/',
-        },
-      ],
-    },
   ],
 })
