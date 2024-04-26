@@ -43,3 +43,78 @@ AlertBo struct {
 		Value        float64               `json:"value"`
 }
 ```
+
+## 系统内置函数
+
+```go
+func templateFuncMap() template.FuncMap {
+	return template.FuncMap{
+		"now":        time.Now,
+		"hasPrefix":  strings.HasPrefix,
+		"hasSuffix":  strings.HasSuffix,
+		"contains":   strings.Contains,
+		"TrimSpace":  strings.TrimSpace,
+		"trimPrefix": strings.TrimPrefix,
+		"trimSuffix": strings.TrimSuffix,
+		"toUpper":    strings.ToUpper,
+		"toLower":    strings.ToLower,
+		"replace":    strings.Replace,
+		"split":      strings.Split,
+	}
+}
+```
+
+### 内置函数使用示例
+
+* 模板
+  
+```tpl
+当前时间: {{ now.Format "2006-01-02 15:04:05" }}
+是否告警: {{ if contains .Status "firing" }}告警了{{ else }}恢复了{{ end }}
+IP:{{ range split .Labels.ip "." }}
+ an ip {{ . }}
+{{- end }}
+```
+
+* 模板数据
+
+```go
+data := &AlertBo{
+    Status:       "firing",
+    Labels:       map[string]string{
+        "__name__":       "test",
+        "__alert_id__":   "1",
+        "__group_name__": "test",
+        "__group_id__":   "1",
+        "__level_id__":   "1",
+        "instance":       "test-instance",
+        "alertname":      "test-alert",
+        "ip":             "192.168.1.100",
+    },
+    Annotations:  map[string]string{
+        "summary":     "test summary",
+        "description": "test description",
+    },
+    StartsAt:     time.Now().Format(time.RFC3339),
+    EndsAt:       time.Now().Add(time.Hour).Format(time.RFC3339),
+    GeneratorURL: "https://prometheus.aide-cloud.cn/#/home",
+    Fingerprint:  hash.MD5("test"),
+    Value:        100.0011,
+}
+```
+
+* 结果
+
+```bash
+当前时间: 2024-04-26 17:39:00
+是否告警: 告警了
+IP:
+    an ip 192
+    an ip 168
+    an ip 1
+    an ip 100
+```
+
+::: note
+    其他用法可自行尝试
+:::
