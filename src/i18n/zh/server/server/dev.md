@@ -14,7 +14,7 @@ api服务技术栈:
   - [prometheus](https://github.com/prometheus/client_golang)
   - [gorm](https://gorm.io/)
   - [redis](https://github.com/redis/go-redis)
-  - [kakfka](https://github.com/confluentinc/confluent-kafka-go)
+  - [kafka](https://github.com/confluentinc/confluent-kafka-go)
   - [nutsdb](https://github.com/nutsdb/nutsdb)
   - [...]()
 
