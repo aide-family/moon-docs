@@ -3,6 +3,7 @@ import { sidebar } from 'vuepress-theme-hope'
 export const zhSidebar = sidebar({
   '/i18n/zh/': [
     'quick-start/',
+    'first-alarm/',
     {
       text: '系统说明',
       icon: 'rongqi',
